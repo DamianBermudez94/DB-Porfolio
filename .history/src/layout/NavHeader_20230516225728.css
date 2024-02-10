@@ -1,0 +1,121 @@
+.header{
+    background-color:rgba(83, 83, 83, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+   
+}
+.header .logo{
+    flex-grow: 2;
+    display: flex;
+   
+}
+.header .logo img{
+    margin: auto;
+    width: 250px;
+}
+.header, nav{
+  display: flex;
+    justify-content: center;
+    height: 132px;
+}
+
+.header nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    
+ 
+}
+.header li{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 17px;
+    font-weight: bold;
+    margin:  15px 15px 0 0;
+}
+.header li a{
+    text-decoration: none;
+    transition: all 300ms;
+    color: #f1f1f1;
+}
+.header .active,
+.header a:hover{
+    color: rgb(255, 80, 80)
+}
+.header .btn-menu{
+    display: none;
+}
+@media screen and (max-width: 870px){
+   .header{
+      
+      overflow: hidden;
+    }
+    .header .logo img{
+      width: 200px;
+    }
+    .header nav {
+      position: fixed;
+      top: 70px;
+      left: -140%;
+      width: 80%;
+      height: calc(100vh - 60px);
+      background-color: #fff;
+      z-index: 9;
+    }
+    .links.active{
+        width: 100%;
+        display: block;
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        top: 150px;
+        left: 0;
+        right: 0;
+        text-align: center;
+        opacity: 1;
+        background: rgba(255, 255, 255, 0);
+        backdrop-filter: blur(19px);
+        height: 100vh;
+        width: 100%;
+    }
+    .links.close{
+      display: none;
+    }
+    nav ul {
+      margin: 0 auto;
+      flex-direction: column;
+      border-top: 5px solid rgb(255, 1, 1);
+      padding: 5px;
+    }
+  
+    nav ul li {
+      width: 100%;
+      margin: 10px auto;
+      border-bottom: 1px solid rgb(255, 1, 1);
+    }
+    nav ul li a {
+      background: none;
+      color: rgb(255, 1, 1);
+    }
+    body.dark nav ul li a{
+      color: #f1f1f1;
+    }
+    nav ul li a.active {
+      background: none;
+      color: rgb(0, 0, 0);
+    }
+    body.dark nav ul li a.active{
+      color: rgb(255, 1, 1);
+    }
+    nav ul li a.active:hover {
+      background: none;
+      color: rgb(0, 0, 0);
+    }
+  
+  
+   
+  }
+ 

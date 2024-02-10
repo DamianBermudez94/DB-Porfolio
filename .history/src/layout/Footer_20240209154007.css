@@ -1,0 +1,108 @@
+.footer {
+  min-height: 120px;
+  line-height: 7px;
+  text-align: center;
+  font-size: 22px;
+  padding: 45px;
+  background-color: #212121;
+}
+
+.contenedor-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  margin: 0 auto;
+  padding: 20px;
+}
+.footer-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin-top: 20px;
+}
+.title-copy {
+  text-align: center;
+  font-size: 26px;
+  font-weight: 300;
+}
+.title-footer {
+  text-decoration: none;
+  color: rgb(252, 136, 136);
+  margin-left: 5px;
+}
+.footer-linea{
+  height: 5px;
+}
+body.dark .title-copy {
+  color: #f1f1f1;
+}
+
+.footer-redes__sociales {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.link-redes_sociales {
+  text-decoration: none;
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(28, 28, 28);
+  border-radius: 10px;
+  text-align: center;
+  position: relative;
+  transition: transform 0.4s;
+  font-size: 26px;
+  padding: 4px;
+}
+.link-redes_sociales:hover {
+  transform: rotate(45deg);
+}
+.link-redes_sociales::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background-color: #373737;
+  border-radius: 10px;
+  transition: opacity 0.2s;
+}
+.link-redes_sociales:hover::before {
+  opacity: 0.4;
+}
+.link-redes_sociales:nth-child(1)::before {
+  background-color: rgb(255, 80, 80);
+}
+.link-redes_sociales:nth-child(2)::before {
+  background-color: rgb(255, 80, 80);
+}
+.link-redes_sociales:nth-child(3)::before {
+  background-color: rgb(255, 80, 80);
+}
+.link-redes_sociales:nth-child(4)::before {
+  background-color: rgb(255, 80, 80);
+}
+
+.link-redes_sociales:hover::before {
+  transform: translate(-4px, -4px);
+  filter: blur(10px);
+}
+
+.link-redes_sociales i {
+  font-size: 1.7em;
+  transition: all 0.4s;
+}
+.link-redes_sociales:hover i {
+  color: #f1f1f1;
+  transform: rotate(-45deg);
+}
+
+body.dark .redes-sociales i {
+  color: #f1f1f1;
+}
