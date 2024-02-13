@@ -1,9 +1,9 @@
 # DB-Porfolio
 # Portfolio Website
 
-Welcome to my portfolio website repository! This project was built using Next.js, CSS, and React hooks like `useState` and `useEffect`. It's a fully responsive website showcasing my skills, projects, and more.
+¡Bienvenido al repositorio del sitio web de mi portafolio! Este proyecto se creó utilizando Next.js, CSS y hooks de React como useState y useEffect. Es un sitio web totalmente responsivo que muestra mis habilidades, proyectos y más.
 
-🚀 [Live Demo](https://chetan9-portfolio.vercel.app/)
+🚀 [Live Demo](https://db-porfolio-ten.vercel.app/)
 
 ## Features
 
@@ -15,7 +15,7 @@ Welcome to my portfolio website repository! This project was built using Next.js
 - Server Side Rendering.
 
 
-## Technologies Used
+## Tecnologías utilizadas
 
 - [Next.js](https://nextjs.org/)
 - CSS for styling
@@ -23,47 +23,47 @@ Welcome to my portfolio website repository! This project was built using Next.js
 
 ## Getting Started
 
-1. Clone the repository:
+1. Clonar el repositorio:
 
 ```bash
 git clone https://github.com/yourusername/your-portfolio-website.git
 ```
 
-2. Navigate to the project directory:
+2. Navegar al directorio del proyecto.:
 
 ```bash
 cd your-portfolio-website
 ```
 
-3. Install dependencies:
+3. Instalar dependencias:
 
 ```bash
 npm install
 ```
 
-4. Start the development server:
+4. Iniciar el servidor de desarrollo:
 
 ```bash
 npm run dev
 ```
 
-5. Open your browser and visit http://localhost:3000 to view your website.
+5. Abra su navegador y visite http://localhost:3000 para ver su sitio web.
 
-## Customization
+## Personalización
 
-You can customize this website by editing the following files:
+Puede personalizar este sitio web editando los siguientes archivos:
 
-- `pages/home.js` for the home page content.
-- `components/portfolio.js` for adding your projects.
-- `components/resume.js` for adding your resume details.
-- `components/contact.js` for customizing the contact section.
-- `components/about.js` for customizing the about section.
+- `pages/home.js` para el contenido de la página de inicio.
+- `components/portfolio.js` para agregar sus proyectos.
+- `components/resume.js` para agregar los detalles de su currículum.
+- `components/contact.js` para personalizar la sección de contacto.
+- `components/about.js` para personalizar la sección acerca de.
 
 
-## Acknowledgments
+## Agradecimientos
 
-- Special thanks to [Next.js](https://nextjs.org/) for making this project possible.
-- Icons used in this project are provided by [Font Awesome](https://fontawesome.com/) and [Simple Line Icons](https://simplelineicons.github.io/).
+- Un agradecimiento especial a [Next.js](https://nextjs.org/) por hacer posible este proyecto.
+- Los íconos utilizados en este proyecto son proporcionados por [Font Awesome](https://fontawesome.com/) y [Simple Line Icons](https://simplelineicons.github.io/).
 
-Feel free to reach out if you have any questions or need further assistance. Happy coding! 🚀
+No dude en comunicarse si tiene alguna pregunta o necesita más ayuda. ¡Feliz codificación! 🚀
 ```
