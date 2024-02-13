@@ -5,14 +5,14 @@
 
 🚀 [Live Demo](https://db-porfolio-ten.vercel.app/)
 
-## Features
+## Características
 
-- Responsive design for all devices.
-- Home section with a brief introduction.
-- Projects section to display your work.
-- Skills section to highlight your expertise.
-- Contact section with contact details and a contact form.
-- Server Side Rendering.
+- Diseño responsivo para todos los dispositivos.
+- Sección de inicio con una breve introducción.
+- Sección de proyectos para mostrar tu trabajo.
+- Sección de habilidades para resaltar tu experiencia.
+- Sección de contacto con datos de contacto y formulario de contacto.
+- Renderizado del lado del servidor.
 
 
 ## Tecnologías utilizadas
