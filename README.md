@@ -21,7 +21,7 @@
 - CSS for styling
 - React hooks: `useState` and `useEffect`
 
-## Getting Started
+## Empezando
 
 1. Clonar el repositorio:
 
