@@ -6,8 +6,7 @@
     font-family: monospace;
     overflow: hidden;
     white-space: nowrap;
-    border-right: .15em solid black;
-    padding: 20px;
+    border-right: .15em solid black; /* Simula el cursor de la máquina de escribir */
   }
   
   .typewriter span:after {
@@ -21,13 +20,8 @@
     50% { border-color: black }
   }
 
-  @media (max-width: 780px) {
+  @media (max-width: 480px) {
     .typewriter span {
-       font-size: 30px;
-      }
-  }
-  @media (max-width: 780px) {
-    .typewriter span {
-       font-size: 20px;
+       font-size: 25px;
       }
   }
