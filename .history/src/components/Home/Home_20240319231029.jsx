@@ -82,7 +82,7 @@ export const Home = () => {
             creación de sitios web responsive hasta la optimización del
             rendimiento y la implementación de características interactivas, me
             enorgullezco de resolver problemas técnicos de manera efectiva. 📧
-            Puedes contactarme en <strong>bermudezdamian7@gmail.com</strong>. Estoy emocionado
+            Puedes contactarme en <stron>bermudezdamian7@gmail.com</stron>. Estoy emocionado
             por las oportunidades que el futuro tiene reservadas.
           </p>
           <NavLink className="enlace-contacto" to="/contacto">

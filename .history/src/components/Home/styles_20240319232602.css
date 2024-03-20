@@ -202,7 +202,7 @@
   grid-column: span 2 ;
 }
 .container-me .enlace-contacto {
-
+  width: 50%;
   text-decoration: none;
   color: #fa9484;
   position: relative;

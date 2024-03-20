@@ -181,7 +181,6 @@
   grid-template-columns: repeat(2,1fr);
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
 }
 
 .section-me p {
@@ -198,17 +197,15 @@
 }
 
 .container-me .enlace-contacto{
-  
+  width: 100%;
   grid-column: span 2 ;
 }
 .container-me .enlace-contacto {
-
   text-decoration: none;
   color: #fa9484;
   position: relative;
   padding: 10px;
   margin-top: 15px;
-  text-align: center;
 }
 
 .container-me .enlace-contacto .border {

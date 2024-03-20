@@ -64,7 +64,7 @@ export const Home = () => {
       <section className="section-me" style={contentAnimation}>
         <h2>Sobre mi</h2>
         <animated.div
-          className="container-me"
+          className="conrainer-me"
           data-animation="diagonal"
           style={contentAnimation}
         >

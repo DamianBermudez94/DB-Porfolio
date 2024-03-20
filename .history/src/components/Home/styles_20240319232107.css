@@ -181,7 +181,6 @@
   grid-template-columns: repeat(2,1fr);
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
 }
 
 .section-me p {
@@ -198,52 +197,50 @@
 }
 
 .container-me .enlace-contacto{
-  
+  width: 100%;
   grid-column: span 2 ;
 }
 .container-me .enlace-contacto {
-
   text-decoration: none;
   color: #fa9484;
   position: relative;
   padding: 10px;
   margin-top: 15px;
-  text-align: center;
 }
 
-.container-me .enlace-contacto .border {
+.container-inicio_contacto p .border {
   position: absolute;
   left: 0;
   background: currentColor;
 }
-.container-me .enlace-contacto .border-top,
-.container-me .enlace-contacto .border-bottom {
+.container-inicio_contacto p .border-top,
+.container-inicio_contacto p .border-bottom {
   width: 100%;
   height: 1px;
   transform: scaleX(0);
 }
-.container-me .enlace-contacto .border-left,
-.container-me .enlace-contacto .border-right {
+.container-inicio_contacto p .border-left,
+.container-inicio_contacto p .border-right {
   width: 1px;
   height: 100%;
   transform: scaleY(0);
 }
-.container-me .enlace-contacto .border-top,
-.container-me .enlace-contacto .border-left,
-.container-me .enlace-contacto .border-right {
+.container-inicio_contacto p .border-top,
+.container-inicio_contacto p .border-left,
+.container-inicio_contacto p .border-right {
   top: 0;
 }
-.container-me .enlace-contacto .border-bottom {
+.container-inicio_contacto p .border-bottom {
   bottom: 0;
   transform-origin: bottom right;
 }
-.container-me .enlace-contacto .border-top {
+.container-inicio_contacto p .border-top {
   transform-origin: top left;
 }
-.container-me .enlace-contacto .border-left {
+.container-inicio_contacto p .border-left {
   transform-origin: bottom left;
 }
-.container-me .enlace-contacto .border-right {
+.container-inicio_contacto p .border-right {
   left: auto;
   right: 0;
   transform-origin: top right;
@@ -254,35 +251,35 @@
   --transition-delay: 0.2s;
 }
 
-.container-me .enlace-contacto .border {
+.container-inicio_contacto p .border {
   transition: transform var(--transition-duration) ease-in-out;
 }
-.container-me .enlace-contacto:hover .border-top,
-.container-me   .enlace-contacto:hover .border-bottom {
+.container-inicio_contacto p .enlace-contacto:hover .border-top,
+.container-inicio_contacto p .enlace-contacto:hover .border-bottom {
   transform: scaleX(1);
 }
-.container-me .enlace-contacto:hover .border-left,
-.container-me .enlace-contacto:hover .border-right {
+.container-inicio_contacto p .enlace-contacto:hover .border-left,
+.container-inicio_contacto p .enlace-contacto:hover .border-right {
   transform: scaleY(1);
 }
-.container-me .enlace-contacto:hover .border-right {
+.container-inicio_contacto p .enlace-contacto:hover .border-right {
   transition-delay: var(--transition-delay);
 }
-.container-me .enlace-contacto:hover .border-bottom {
+.container-inicio_contacto p .enlace-contacto:hover .border-bottom {
   transition-delay: calc(var(--transition-delay) * 2);
 }
-.container-me .enlace-contacto:hover .border-left {
+.container-inicio_contacto p .enlace-contacto:hover .border-left {
   transition-delay: calc(var(--transition-delay) * 3);
 }
 
-.container-me .enlace-contacto[data-animation="diagonal"] .border-left {
+.container-inicio_contacto p[data-animation="diagonal"] .border-left {
   transform-origin: top left;
 }
-.container-me .enlace-contacto[data-animation="diagonal"] .border-right,
-.container-me .enlace-contacto[data-animation="diagonal"] .border-bottom {
+.container-inicio_contacto p[data-animation="diagonal"] .border-right,
+.container-inicio_contacto p[data-animation="diagonal"] .border-bottom {
   transform-origin: bottom right;
 }
-.container-me
+.container-inicio_contacto
   p[data-animation="diagonal"]
   .enlace-contacto:hover
   [class^="border"] {

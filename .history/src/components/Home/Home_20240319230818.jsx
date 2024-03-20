@@ -82,7 +82,7 @@ export const Home = () => {
             creación de sitios web responsive hasta la optimización del
             rendimiento y la implementación de características interactivas, me
             enorgullezco de resolver problemas técnicos de manera efectiva. 📧
-            Puedes contactarme en <strong>bermudezdamian7@gmail.com</strong>. Estoy emocionado
+            Puedes contactarme en bermudezdamian7@gmail.com. Estoy emocionado
             por las oportunidades que el futuro tiene reservadas.
           </p>
           <NavLink className="enlace-contacto" to="/contacto">
@@ -93,6 +93,13 @@ export const Home = () => {
               <span className="border border-left"></span>
             </NavLink>
         </animated.div>
+        <div className="container-inicio_contacto">
+          <p className="parrafo-contacto">
+            ¡Explora mi portafolio y descubre cómo puedo ayudar a hacer realidad
+            tu visión digital{" "}
+           
+          </p>
+        </div>
       </section>
       <section className="content-proyectos__inicio">
         <h2>Estos son algunos de mis proyectos como desarrollador web</h2>
