@@ -10,7 +10,7 @@ export const trabajos =[
         "description":"Aplicación web donde permite jugar el clasico juego en dos opciones, contra la maquina y de forma online ",
     },
     {
-        "id":"e-commerce",
+        "id":"ecommerce",
         "nombre":"E-commerce",
         "url":"https://desafio-final-mod10.vercel.app/",
         "git":"https://github.com/DamianBermudez94/desafio-final-mod10",
@@ -37,7 +37,7 @@ export const trabajos =[
         "description":"Página de aterrizaje para inmobiliaria, lo cual muestra infomación sobre la misma, que ofrece, formulario de contacto, link redes sociales.",
     },
     {
-        "id":"sp-seguridad",
+        "id":"ladinpagesp",
         "nombre":"Sp Seguridad",
         "url":"https://damianbermudez94.github.io/sp-seguridad/",
         "git":"https://github.com/DamianBermudez94/sp-seguridad",
