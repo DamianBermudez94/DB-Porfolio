@@ -11,6 +11,8 @@
   },
   "dependencies": {
     "@iconify/react": "^4.1.1",
+    "animateJs": "^0.1.0",
+    "animejs": "^3.2.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^5.0.1",

@@ -1,0 +1,13 @@
+.content-main {
+  margin: 0 auto;
+
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+.layout {
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 100%;
+  padding-top: 145px;
+  margin: 0 auto;
+}

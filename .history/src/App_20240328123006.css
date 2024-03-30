@@ -1,0 +1,33 @@
+.parallax-container {
+  position: relative;
+  height: 400px; /* Altura ajustable según tus necesidades */
+  overflow: hidden;
+}
+.parallax-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: repeat;
+  background-position: center;
+  transform: translate3d(0, 0, 0); /* Añade aceleración por hardware */
+}
+.parallax-content {
+  position: relative;
+  z-index: 1; /* Asegura que el contenido esté sobre la imagen de fondo */
+
+}
+.content-main {
+  margin: 0 auto;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+.layout {
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 100%;
+  padding-top: 145px;
+  margin: 0 auto;
+}
