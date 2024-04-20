@@ -1,0 +1,26 @@
+.floating-button {
+  margin: 0 auto;
+  padding: 10px 20px;
+  background-color: transparent;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 0.3s ease-out;
+}
+
+.floating-button:hover {
+  transition: all 2s;
+  transform: translateY(-20px);
+  
+  border-radius: 50%;
+}
+
+.floating-button .lazyload-wrapper {
+  width: 100%;
+  margin: 0 auto;
+}
+.icon-abajo {
+  width: 80px;
+  height: 80px;
+}
