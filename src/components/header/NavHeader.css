@@ -43,8 +43,10 @@
 }
 .header .logo img {
   width: 150px;
-  height: 100px;
+  height: 150px;
   object-fit: cover;
+
+  margin-top: 5px;
 }
 
 .header nav ul {
@@ -149,7 +151,7 @@
     padding: 50px;
   }
   .header .logo img {
-    width: 150px;
+    width: 100px;
     height: 100px;
   }
 }
