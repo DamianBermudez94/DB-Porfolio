@@ -25,7 +25,7 @@
   justify-content: center;
   align-items: center;
   padding: 10px;
- 
+  margin-top: 20px;
 }
 .title-copy {
   text-align: center;
@@ -110,8 +110,5 @@
 @media screen and (max-width: 480px) {
   .content-copy {
     flex-direction: column;
-  }
-  .title-copy{
-    margin: 5px;
   }
 }

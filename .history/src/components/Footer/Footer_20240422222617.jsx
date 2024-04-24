@@ -12,11 +12,9 @@ export const Footer = () => {
           </div>
           <hr className='footer-linea__separacion' />
           <div className="content-copy">
-              <p className="title-copy">Hecho por</p>
-              <a className="enlace-logo" href="https://damianbermudezdev.es/"><img src={"/image/nuevoLogo-DB3.png"} alt="" /></a>
+              <p className="title-copy">Hecho por<a className="title-footer" href="https://damianbermudezdev.es/"><img src={"/image/nuevoLogo-DB3.png"} alt="" /></a></p>
           </div>
       </div>
     </footer>
   )
 }
- 

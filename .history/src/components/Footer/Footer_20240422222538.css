@@ -20,21 +20,22 @@
   margin: 0 auto;
   padding: 20px;
 }
-.content-copy {
+.footer-text {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 10px;
- 
+  margin-top: 20px;
 }
 .title-copy {
   text-align: center;
   font-size: 26px;
   font-weight: 300;
 }
-.content-copy a img {
-  width: 150px;
-  height: 150px;
+.title-footer {
+  text-decoration: none;
+  color: rgb(252, 136, 136);
+  margin-left: 5px;
 }
 .footer-linea__separacion {
   height: 1px;
@@ -107,11 +108,3 @@
   transform: rotate(-45deg);
 }
 
-@media screen and (max-width: 480px) {
-  .content-copy {
-    flex-direction: column;
-  }
-  .title-copy{
-    margin: 5px;
-  }
-}

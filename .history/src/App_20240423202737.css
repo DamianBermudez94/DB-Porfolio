@@ -1,8 +1,4 @@
-.parallax-container {
-  position: relative;
-  overflow: hidden;
-  color: #fff;
-}
+
 .parallax-background {
   position: absolute;
   top: 0;
