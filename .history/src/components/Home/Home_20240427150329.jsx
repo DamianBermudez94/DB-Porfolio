@@ -106,7 +106,7 @@ export const Home = () => {
               para tus proyectos. Mi portafolio incluye proyectos web de diversa
               envergadura. Desde la creación de sitios web responsive hasta la
               optimización del rendimiento y la implementación de
-              características interactivas. Este último tiempo estuve practicando React, Next Js y diseño para mejorar la calidad de mis proyectos  
+              características interactivas. Este último tiempo estuve practicando React y diseño para mejorar la calidad de mis proyectos  
             </p>
           </article>
           <ButtonInformacion text="¡Demos vida a tu idea!" />

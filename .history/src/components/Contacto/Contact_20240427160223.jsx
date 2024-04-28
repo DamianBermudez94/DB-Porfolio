@@ -1,21 +1,10 @@
-
+import { ButtonInformacion } from "../ButtonInformacion/ButtonInformacion";
 import sendEmail from "../../firebase/SendEmail";
 import "./styles.css";
 import "./styles.css";
 export const Contact = () => {
   function handlerSubmit(e){
     e.preventDefault();
-    let name = e.target.nombre.value;
-    let telefono = e.target.telefono.value;
-    let email = e.target.correo.value;
-    let asunto = e.target.asunto.value;
-    console.log(name);
-    console.log(telefono);
-    console.log(email);
-    console.log(asunto);
-    sendEmail(name,telefono,email,asunto);
-    
-
   }
 
 
@@ -43,11 +32,11 @@ export const Contact = () => {
           placeholder="Escriba su email..."
         />
         <textarea
-          name="asunto"
+          name="mensaje"
           id="mensaje"
           placeholder="Deje su mensaje......"
         ></textarea>
-        <button type="submit">Enviar</button>
+        <ButtonInformacion text="Enviar"/>
         <div className="mensaje-form">
           <strong>
             * No dudes en consultarme, te estare respondiendo a la brevedad *

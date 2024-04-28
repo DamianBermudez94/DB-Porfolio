@@ -100,13 +100,14 @@ export const Home = () => {
               ¡Hola! Soy{" "}
               <strong>Desarrollador Web Full Stack y Diseñador Web</strong> en
               búsqueda de nuevas oportunidades para seguir expandiendo mis
-              horizontes profesionales. llevo 3 años dedicados a
+              horizontes profesionales. Con más de dos años y medio dedicados a
               perfeccionarme en las tecnologías más demandadas del mercado,
               estoy listo para ofrecer soluciones innovadoras y de alta calidad
               para tus proyectos. Mi portafolio incluye proyectos web de diversa
               envergadura. Desde la creación de sitios web responsive hasta la
               optimización del rendimiento y la implementación de
-              características interactivas. Este último tiempo estuve practicando React, Next Js y diseño para mejorar la calidad de mis proyectos  
+              características interactivas, me enorgullezco de resolver
+              problemas técnicos de manera efectiva
             </p>
           </article>
           <ButtonInformacion text="¡Demos vida a tu idea!" />

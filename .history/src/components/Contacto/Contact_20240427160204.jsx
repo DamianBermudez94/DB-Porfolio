@@ -1,10 +1,18 @@
-import "./styles.css"
+import { ButtonInformacion } from "../ButtonInformacion/ButtonInformacion";
+import sendEmail from "../../firebase/SendEmail";
+import "./styles.css";
+import "./styles.css";
 export const Contact = () => {
+  function handlerSubmit(e){
+
+  }
+
+
   return (
-    <div className="container-form" data-animation="diagonal">
-      <h1 className="heading">Contacto</h1>
-<span>Contacto</span>
-      <form id="formulario" action="mailto:bermudezdamian7@gmail.com">
+    <section className="container-form" data-animation="diagonal">
+      <h1 className="title-contacto">Contacto</h1>
+      <span className="sub-title__contacto">Contacto</span>
+      <form id="formulario" onSubmit={handlerSubmit} >
         <input
           type="text"
           id="nombre"
@@ -28,17 +36,13 @@ export const Contact = () => {
           id="mensaje"
           placeholder="Deje su mensaje......"
         ></textarea>
-        <button type="submit" className="btn-enviar mostrarArriba">
-          Enviar mensaje
-          <span className="border border-top"></span>
-          <span className="border border-right"></span>
-          <span className="border border-bottom"></span>
-          <span className="border border-left"></span>
-        </button>
+        <ButtonInformacion text="Enviar"/>
         <div className="mensaje-form">
-          <strong>* No dudes en consultarme, te estare respondiendo a la brevedad *</strong>
+          <strong>
+            * No dudes en consultarme, te estare respondiendo a la brevedad *
+          </strong>
         </div>
       </form>
-    </div>
+    </section>
   );
 };

@@ -13,8 +13,8 @@
 .content-title__principal h1 {
 
   font-size: 70px;
-  background: -webkit-linear-gradient(#ff0000, #fc000059);
-  background-clip: text;
+  background: -webkit-linear-gradient(#ff0000, #fc000056);
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin: 10px;
 }

@@ -10,9 +10,6 @@ export const Contact = () => {
     let email = e.target.correo.value;
     let asunto = e.target.asunto.value;
     console.log(name);
-    console.log(telefono);
-    console.log(email);
-    console.log(asunto);
     sendEmail(name,telefono,email,asunto);
     
 

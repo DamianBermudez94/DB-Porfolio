@@ -1,4 +1,4 @@
-
+import { ButtonInformacion } from "../ButtonInformacion/ButtonInformacion";
 import sendEmail from "../../firebase/SendEmail";
 import "./styles.css";
 import "./styles.css";
@@ -7,12 +7,9 @@ export const Contact = () => {
     e.preventDefault();
     let name = e.target.nombre.value;
     let telefono = e.target.telefono.value;
-    let email = e.target.correo.value;
+    let email = e.target.email.value;
     let asunto = e.target.asunto.value;
     console.log(name);
-    console.log(telefono);
-    console.log(email);
-    console.log(asunto);
     sendEmail(name,telefono,email,asunto);
     
 
