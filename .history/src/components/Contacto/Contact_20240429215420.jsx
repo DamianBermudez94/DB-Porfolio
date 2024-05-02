@@ -1,11 +1,25 @@
+
+import sendEmail from "../../firebase/SendEmail";
 import "./styles.css";
 import "./styles.css";
 export const Contact = () => {
+  function handlerSubmit(e){
+    e.preventDefault();
+    let name = e.target.nombre.value;
+    let telefono = e.target.telefono.value;
+    let email = e.target.correo.value;
+    let asunto = e.target.asunto.value;
+    sendEmail(name,telefono,email,asunto);
+    
+
+  }
+
+
   return (
     <section className="container-form" data-animation="diagonal">
       <h1 className="title-contacto">Contacto</h1>
       <span className="sub-title__contacto">Contacto</span>
-      <form id="formulario">
+      <form id="formulario" onSubmit={handlerSubmit} >
         <input
           type="text"
           id="nombre"
