@@ -1,0 +1,149 @@
+.header {
+  height: 80px;
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1000;
+  padding: 50px 20px;
+  margin: 0 auto;
+  transition: background-color 0.5s ease;
+}
+
+/* Cambiar el fondo al hacer scroll */
+.header.scrolled {
+  width: 100%;
+  background: radial-gradient(
+    circle,
+    rgba(11, 10, 10, 9) 40%,
+    rgba(99, 1, 1, 0.555) 100%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  border-radius: 0px 0px 10px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  margin: 0 auto;
+}
+
+.nav-content {
+  width: 100%;
+  height: 80px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  padding: 5px;
+  align-items: center;
+}
+.header .logo img {
+  width: 130px;
+  height: 130px;
+  object-fit: cover;
+  margin-top: 5px;
+}
+
+.menu ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+.menu li {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 17px;
+  font-weight: bold;
+  margin: 15px;
+}
+.menu li a {
+  text-decoration: none;
+  transition: all 300ms;
+  color: #f1f1f1;
+}
+
+.menu li a .active {
+  font-weight: bold;
+  color: red;
+}
+
+.header .btn-menu {
+  display: none;
+}
+@media screen and (max-width: 960px) {
+  .header {
+    max-width: 900px;
+  }
+
+  .menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    transform: translateY(-100%);
+    transition: transform 0.5s ease-in-out;
+    position: fixed;
+    top: 100px;
+    left: 0%;
+    width: 100%;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 0;
+    overflow: hidden;
+    background-color: rgba(179, 20, 20, 0.555);
+    backdrop-filter: blur(19px);
+  }
+
+  .menu.active {
+    transform: translateY(0);
+    width: 100%;
+    height: 100vh;
+    bottom: 10px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .menu ul {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .menu li {
+    width: 100%;
+    margin: 10px auto;
+    border-bottom: 1px solid rgb(255, 1, 1);
+    margin: 10px 0;
+    transform: translateY(-50px);
+    opacity: 0;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+  }
+  .menu.active li {
+    transform: translateY(0);
+    opacity: 1;
+    padding: 10px;
+  }
+  .menu a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    transition: color 0.3s;
+  }
+  .menu a:hover {
+    color: #ffd700;
+  }
+}
+@media screen and (max-width: 480px) {
+  .header {
+    padding: 50px;
+  }
+}
