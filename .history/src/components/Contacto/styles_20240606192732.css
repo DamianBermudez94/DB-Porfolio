@@ -53,7 +53,7 @@
   border-radius: 10px;
   text-align: center;
   position: relative;
-  transition: transform 0.3s ease;
+  transition: transform 0.4s;
   padding: 4px;
 }
 .link-redes_sociales:hover {
@@ -67,22 +67,22 @@
   opacity: 0;
   background-color: #373737;
   border-radius: 10px;
-  transition: opacity 0.4s ease-in-out;
+  transition: opacity 0.2s;
 }
 .link-redes_sociales:hover::before {
   opacity: 0.4;
 }
 .link-redes_sociales:nth-child(1)::before {
-  background-color: #0011ff;
+  background-color: rgb(255, 80, 80);
 }
 .link-redes_sociales:nth-child(2)::before {
   background-color: rgb(255, 80, 80);
 }
 .link-redes_sociales:nth-child(3)::before {
-  background-color: #0e76A8;
+  background-color: rgb(255, 80, 80);
 }
 .link-redes_sociales:nth-child(4)::before {
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(255, 80, 80);
 }
 
 .link-redes_sociales:hover::before {
@@ -96,7 +96,7 @@
 }
 .link-redes_sociales:hover i {
   color: #f1f1f1;
-  transform: rotateY(-360deg);
+  transform: rotate(-45deg);
 }
 
 

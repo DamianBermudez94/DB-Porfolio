@@ -26,12 +26,13 @@
   overflow: hidden;
 }
 
+
 .container-skills {
   width: 100%;
   max-width: 1000px;
   margin: 0 auto;
   padding: 10px;
-  perspective: 900px;
+  perspective: 800px;
 }
 
 .title-skills {
@@ -43,7 +44,7 @@
   border-bottom: 3px solid rgb(255, 80, 80);
 }
 
-.skills-3d ul {
+.skills-3d ul{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -60,7 +61,10 @@
   gap: 20px;
   padding: 10px;
 }
-.skill-item {
+.skill-item{
+
+
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -68,14 +72,17 @@
   width: 120px;
   height: 120px;
   margin: 10px;
+
+
+
   transform: rotateY(calc(var(--i) * 30deg)) translateZ(300px);
 }
 @keyframes rotate {
   from {
-    transform: rotateY(0);
+      transform: rotateY(0);
   }
   to {
-    transform: rotateY(360deg);
+      transform: rotateY(360deg);
   }
 }
 .container-skills li {
@@ -92,13 +99,17 @@
   text-align: center;
   font-size: 90px;
   color: rgb(255, 255, 255);
+
+ 
 }
 
 .container-skills li p {
   list-style: none;
   text-align: center;
   font-size: 30px;
+
 }
+
 
 .container-estudios {
   width: 100%;
@@ -138,6 +149,7 @@
   font-size: 25px;
   font-weight: 300;
   border-bottom: 1px solid rgba(255, 255, 255, 0.247);
+ 
 }
 
 .tecnologias-icon {
@@ -214,6 +226,8 @@
     font-size: 55px;
     top: -70px;
   }
+
+ 
 }
 
 @media screen and (max-width: 360px) {

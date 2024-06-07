@@ -15,10 +15,15 @@
   display: flex;
   justify-content:center;
   align-items: center;
-  gap: 30px;
 }
 
-
+.content-copy__footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+  margin: 0 auto;
+  padding: 20px;
+}
 
 .title-copy {
   text-align: center;

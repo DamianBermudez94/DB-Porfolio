@@ -23,100 +23,100 @@ export const Conocimientos = () => {
         <h2 className="title-skills">Soft Skills</h2>
         <article className="container-skills">
           <div className="skills-3d">
-            <ul>
-              <li>
-                <div className="skill-item">
-                  <TiHtml5 />
-                  <p>HTML</p>
-                </div>
-              </li>
-              <li>
-                <div className="skill-item">
-                  <FaCss3Alt />
-                  <p>CSS3</p>
-                </div>
-              </li>
-              <li>
-                <div className="skill-item">
-                  <IoLogoJavascript />
-                  <p>JavaScript</p>
-                </div>
-              </li>
-              <li>
-                <div className="skill-item">
-                  <SiTypescript />
-                  <p>TypeScript</p>
-                </div>
-              </li>
-              <li>
-                <div className="skill-item">
-                  <FaReact />
-                  <p>React js</p>
-                </div>
-              </li>
-              <li>
-                <div className="skill-item">
-                  <FaNode />
-                  <p>Node js</p>
-                </div>
-              </li>
-              <li>
-                <div className="skill-item">
-                  <SiExpress />
-                  <p>Express</p>
-                </div>
-              </li>
+          <ul>
+            <li>
+              <div className="skill-item">
+                <TiHtml5 />
+                <p>HTML</p>
+              </div>
+            </li>
+            <li>
+              <div className="skill-item">
+                <FaCss3Alt />
+                <p>CSS3</p>
+              </div>
+            </li>
+            <li>
+              <div className="skill-item">
+                <IoLogoJavascript />
+                <p>JavaScript</p>
+              </div>
+            </li>
+            <li>
+              <div className="skill-item">
+                <SiTypescript />
+                <p>TypeScript</p>
+              </div>
+            </li>
+            <li>
+              <div className="skill-item">
+                <FaReact />
+                <p>React js</p>
+              </div>
+            </li>
+            <li>
+              <div className="skill-item">
+                <FaNode />
+                <p>Node js</p>
+              </div>
+            </li>
+            <li>
+              <div className="skill-item">
+                <SiExpress />
+                <p>Express</p>
+              </div>
+            </li>
 
-              <li>
-                <div className="skill-item">
-                  <IoLogoFirebase />
-                  <p>Firebase</p>
-                </div>
-              </li>
-              <li>
-                <div className="skill-item">
-                  <SiMongodb />
-                  <p>Mongo</p>
-                </div>
-              </li>
-              <li>
-                <div className="skill-item">
-                  <FaGithub />
-                  <p>Git Hub</p>
-                </div>
-              </li>
-              <li>
-                <div className="skill-item">
-                  <BsTerminalFill />
-                  <p>Git Bash</p>
-                </div>
-              </li>
+            <li>
+              <div className="skill-item">
+                <IoLogoFirebase />
+                <p>Firebase</p>
+              </div>
+            </li>
+            <li>
+              <div className="skill-item">
+                <SiMongodb />
+                <p>Mongo</p>
+              </div>
+            </li>
+            <li>
+              <div className="skill-item">
+                <FaGithub />
+                <p>Git Hub</p>
+              </div>
+            </li>
+            <li>
+              <div className="skill-item">
+                <BsTerminalFill />
+                <p>Git Bash</p>
+              </div>
+            </li>
 
-              <li>
-                <div className="skill-item">
-                  <SiPostman />
-                  <p>Postman</p>
-                </div>
-              </li>
-              <li>
-                <div className="skill-item">
-                  <RxVercelLogo />
-                  <p>Vercel</p>
-                </div>
-              </li>
-              <li>
-                <div className="skill-item">
-                  <GrHeroku />
-                  <p>Heroku</p>
-                </div>
-              </li>
-              <li>
-                <div className="skill-item">
-                  <FaFigma />
-                  <p>Figma</p>
-                </div>
-              </li>
-            </ul>
+            <li>
+              <div className="skill-item">
+                <SiPostman />
+                <p>Postman</p>
+              </div>
+            </li>
+            <li>
+              <div className="skill-item">
+                <RxVercelLogo />
+                <p>Vercel</p>
+              </div>
+            </li>
+            <li>
+              <div className="skill-item">
+                <GrHeroku />
+                <p>Heroku</p>
+              </div>
+            </li>
+            <li>
+              <div className="skill-item">
+                <FaFigma />
+                <p>Figma</p>
+              </div>
+            </li>
+          </ul>
           </div>
         </article>
 

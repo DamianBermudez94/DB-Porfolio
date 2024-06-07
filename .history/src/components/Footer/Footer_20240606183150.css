@@ -11,11 +11,10 @@
     rgba(0, 0, 0, 0) 100%
   );
 }
-.content-copy__footer{
+.content-copy__footer {
   display: flex;
-  justify-content:center;
+  justify-content: center;
   align-items: center;
-  gap: 30px;
 }
 
 
@@ -31,13 +30,11 @@
 }
 
 
-
-
 @media screen and (max-width: 480px) {
   .content-copy {
     flex-direction: column;
   }
-  .title-copy{
+  .title-copy {
     margin: 5px;
   }
 }

@@ -2,20 +2,20 @@ import "./styles.css";
 export const Contact = () => {
   return (
     <section className="container-form" data-animation="diagonal" id="contacto">
-      <div className="content">
+      <div>
         <h1 className="title-contacto">Contacto</h1>
         <span className="sub-title__contacto">Contacto</span>
-        <div className="content-redes__sociales">
-          <a href="https://www.facebook.com" className="link-redes_sociales" target="_blank">
+        <div className="footer-redes__sociales">
+          <a href="https://www.facebook.com" className="link-redes_sociales">
             <i className="fab fa-facebook facebook"></i>
           </a>
-          <a href="https://www.instagram.com" className="link-redes_sociales" target="_blank">
+          <a href="https://www.instagram.com" className="link-redes_sociales">
             <i className="fab fa-instagram instagran"></i>
           </a>
-          <a href="https://www.linkedin.com" className="link-redes_sociales" target="_blank">
+          <a href="https://www.linkedin.com" className="link-redes_sociales">
             <i className="fab fa-linkedin linkedin"></i>
           </a>
-          <a href="https://github.com/DamianBermudez94" className="link-redes_sociales" target="_blank">
+          <a href="https:/www.github.com" className="link-redes_sociales">
             <i className="fab fa-github-square github"></i>
           </a>
         </div>

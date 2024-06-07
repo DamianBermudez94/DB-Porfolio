@@ -2,25 +2,16 @@ import "./styles.css";
 export const Contact = () => {
   return (
     <section className="container-form" data-animation="diagonal" id="contacto">
-      <div className="content">
+      <div>
         <h1 className="title-contacto">Contacto</h1>
         <span className="sub-title__contacto">Contacto</span>
-        <div className="content-redes__sociales">
-          <a href="https://www.facebook.com" className="link-redes_sociales" target="_blank">
-            <i className="fab fa-facebook facebook"></i>
-          </a>
-          <a href="https://www.instagram.com" className="link-redes_sociales" target="_blank">
-            <i className="fab fa-instagram instagran"></i>
-          </a>
-          <a href="https://www.linkedin.com" className="link-redes_sociales" target="_blank">
-            <i className="fab fa-linkedin linkedin"></i>
-          </a>
-          <a href="https://github.com/DamianBermudez94" className="link-redes_sociales" target="_blank">
-            <i className="fab fa-github-square github"></i>
-          </a>
-        </div>
       </div>
-
+      <div className="footer-redes__sociales">
+              <a href="https://www.facebook.com" className="link-redes_sociales" ><i className="fab fa-facebook facebook"></i></a>
+              <a href="https://www.instagram.com" className="link-redes_sociales" ><i className="fab fa-instagram instagran"></i></a>
+              <a href="https://www.linkedin.com" className="link-redes_sociales" ><i className="fab fa-linkedin linkedin"></i></a>
+              <a href="https:/www.github.com" className="link-redes_sociales" ><i className="fab fa-github-square github"></i></a>
+          </div>
       <form id="formulario">
         <input
           type="text"
@@ -50,8 +41,8 @@ export const Contact = () => {
           required
         ></textarea>
         <button type="submit" className="btn-enviar">
-          <span>Enviar</span>
-          <span></span>
+        <span>Enviar</span>
+        <span></span>
         </button>
         <div className="mensaje-form">
           <strong>

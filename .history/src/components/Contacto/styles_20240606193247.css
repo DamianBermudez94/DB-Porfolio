@@ -70,19 +70,19 @@
   transition: opacity 0.4s ease-in-out;
 }
 .link-redes_sociales:hover::before {
-  opacity: 0.4;
+  opacity: 0.1;
 }
 .link-redes_sociales:nth-child(1)::before {
-  background-color: #0011ff;
+  background-color: rgb(255, 80, 80);
 }
 .link-redes_sociales:nth-child(2)::before {
   background-color: rgb(255, 80, 80);
 }
 .link-redes_sociales:nth-child(3)::before {
-  background-color: #0e76A8;
+  background-color: rgb(255, 80, 80);
 }
 .link-redes_sociales:nth-child(4)::before {
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(255, 80, 80);
 }
 
 .link-redes_sociales:hover::before {

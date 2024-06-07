@@ -7,7 +7,7 @@ export const Footer = () => {
         <a className="enlace-logo" href="https://damianbermudezdev.es/">
           <img src={"/image/nuevoLogo-DB3.png"} alt="" />
         </a>
-        <p>&copy; 2024</p>
+        <p>&copy; 2024 Mi Página Web</p>
       </div>
     </footer>
   );

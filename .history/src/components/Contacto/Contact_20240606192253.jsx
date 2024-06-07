@@ -15,7 +15,7 @@ export const Contact = () => {
           <a href="https://www.linkedin.com" className="link-redes_sociales" target="_blank">
             <i className="fab fa-linkedin linkedin"></i>
           </a>
-          <a href="https://github.com/DamianBermudez94" className="link-redes_sociales" target="_blank">
+          <a href="https:/www.github.com" className="link-redes_sociales" target="_blank">
             <i className="fab fa-github-square github"></i>
           </a>
         </div>
