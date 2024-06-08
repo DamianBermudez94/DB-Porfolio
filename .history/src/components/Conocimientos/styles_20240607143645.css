@@ -1,0 +1,244 @@
+/** ---- Skills/estudios ----**/
+
+.container-conocimientos {
+  padding: 0;
+  text-align: center;
+  margin: 0;
+}
+.title-conocimientos {
+  width: 100%;
+  max-width: 600px;
+  font-size: 80px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 5px;
+  color: rgb(255, 255, 255);
+  border-bottom: 3px solid rgb(255, 80, 80);
+}
+.sub-title__conocimientos {
+  position: relative;
+  opacity: 0.1;
+  font-size: 120px;
+  top: -150px;
+  right: 0;
+  left: 0;
+  color: rgb(253, 214, 214);
+  overflow: hidden;
+}
+
+.title-skills {
+  width: 100%;
+  max-width: 350px;
+  font-size: 4em;
+  text-align: center;
+  margin: 50px auto 50px;
+  border-bottom: 3px solid rgb(255, 80, 80);
+}
+
+.container-skills {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 10px;
+  perspective: 900px;
+}
+
+.list-front,
+.list-back {
+  width: 100%;
+  height: 800px;
+  display: flex;
+}
+.skills-3d{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.skills-3d ul {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0;
+  list-style: none;
+  margin: 0;
+  transform-style: preserve-3d;
+  animation: rotate 20s infinite linear;
+}
+.item-front {
+  width: 100%;
+  position: absolute;
+  top: 200px;
+
+  transform: rotateX(calc(var(--i) * 60deg)) translateZ(300px);
+}
+.item-back {
+  width: 100%;
+  list-style: none;
+  text-align: center;
+  transition: all 0.5s;
+  cursor: pointer;
+  position: absolute;
+  top: 100px;
+  transform: rotateX(calc(var(--i) * 80deg)) translateZ(300px);
+}
+.skill-item {
+  width: 200px;
+  height: 200px;
+}
+@keyframes rotate {
+  from {
+    transform: rotateX(0);
+  }
+  to {
+    transform: rotateX(360deg);
+  }
+}
+
+.container-skills li:hover {
+  filter: drop-shadow(15px 15px 2px red);
+}
+.container-skills li svg {
+  list-style: none;
+  text-align: center;
+  font-size: 90px;
+}
+
+.container-skills li p {
+
+  list-style: none;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.container-estudios {
+  width: 100%;
+  height: 800px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  margin: 100px auto;
+
+  background: radial-gradient(
+    circle,
+    rgba(11, 10, 10, 9) 40%,
+    rgba(99, 1, 1, 0.555) 100%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
+}
+.list-formacion li {
+  list-style: none;
+}
+.list-formacion li span {
+  font-size: 50px;
+}
+
+.title-estudios {
+  text-align: center;
+  font-size: 4em;
+  width: 100%;
+  max-width: 400px;
+  margin: 50px;
+  border-bottom: 3px solid rgb(255, 80, 80);
+}
+
+.container-estudios p {
+  text-align: left;
+  font-size: 25px;
+  font-weight: 300;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.247);
+}
+
+.tecnologias-icon {
+  text-align: center;
+  font-size: 24px;
+  padding: 5px;
+}
+
+.icon-title {
+  font-size: 35px;
+}
+.container-estudios a {
+  text-decoration: none;
+  transition: all 2s;
+  font-size: 26px;
+  color: rgb(255, 0, 0);
+  border-radius: 8px;
+  padding: 8px;
+}
+.container-estudios a:hover {
+  text-decoration: none;
+  outline: 2px solid rgb(255, 80, 80);
+}
+@media screen and (max-width: 1280px) {
+  .title-conocimientos {
+    font-size: 70px;
+    max-width: 500px;
+  }
+  .sub-title__conocimientos {
+    width: 100%;
+    font-size: 100px;
+    top: -130px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .title-conocimientos {
+    font-size: 60px;
+    max-width: 400px;
+  }
+  .sub-title__conocimientos {
+    font-size: 100px;
+    top: -130px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .title-conocimientos {
+    font-size: 45px;
+    max-width: 400px;
+  }
+  .sub-title__conocimientos {
+    font-size: 70px;
+    top: -90px;
+  }
+  .container-skills ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .container-skills li svg {
+    list-style: none;
+    text-align: center;
+    font-size: 50px;
+    color: rgb(255, 80, 80);
+    transition: all 0.5s;
+    cursor: pointer;
+  }
+}
+@media screen and (max-width: 480px) {
+  .title-conocimientos {
+    font-size: 40px;
+    max-width: 300px;
+  }
+  .sub-title__conocimientos {
+    font-size: 55px;
+    top: -70px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .container-skills ul {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .title-conocimientos {
+    font-size: 30px;
+    max-width: 250px;
+  }
+  .sub-title__conocimientos {
+    font-size: 40px;
+    top: -60px;
+  }
+}
