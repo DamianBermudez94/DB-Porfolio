@@ -9,9 +9,7 @@
   justify-content: left;
   padding: 40px 60px;
 }
-.content-title__principal{
-  width: 100%;
-}
+
 .content-title__principal h1 {
   width: 100%;
   font-size: 4.5em;
@@ -26,7 +24,7 @@
   display: flex;
   align-items: center;
   justify-content: left;
-  padding: 20px 0;
+  padding: 100px 0;
   margin: 10px;
 }
 .container-redes_inicio .link-redes_sociales {
