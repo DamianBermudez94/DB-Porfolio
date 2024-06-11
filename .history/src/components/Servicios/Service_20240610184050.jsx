@@ -34,7 +34,7 @@ export const Service = () => {
 
   return (
     <section className="section-servicios scroll-effect" id="servicios">
-      <div className="content-title">
+      <div>
         <h1 className="title-servicios">Servicios</h1>
         <span className="sub-title__servicios">Servicios</span>
       </div>

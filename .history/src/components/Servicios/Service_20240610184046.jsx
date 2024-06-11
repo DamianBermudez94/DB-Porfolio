@@ -16,7 +16,7 @@ export const Service = () => {
           const position = ref.current.getBoundingClientRect().top;
 
           if (position < windowHeight * 0.9) {
-            setIsVisible((prevState) => ({ ...prevState, [index]: true }));
+            setIsVisible(prevState => ({ ...prevState, [index]: true }));
           }
         }
       });
@@ -34,11 +34,11 @@ export const Service = () => {
 
   return (
     <section className="section-servicios scroll-effect" id="servicios">
-      <div className="content-title">
-        <h1 className="title-servicios">Servicios</h1>
-        <span className="sub-title__servicios">Servicios</span>
+      <div>
+      <h1 className="title-servicios">Servicios</h1>
+      <span className="sub-title__servicios">Servicios</span>
       </div>
-
+      
       <div
         ref={sectionRef}
         className={`container-card_servicios ${

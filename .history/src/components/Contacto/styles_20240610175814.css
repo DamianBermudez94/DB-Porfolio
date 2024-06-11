@@ -202,7 +202,7 @@ textarea {
 @media screen and (max-width: 720px) {
   .container-form {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
     margin: 0;
@@ -215,7 +215,7 @@ textarea {
 
   .sub-title__contacto {
     font-size: 100px;
-    top: -10px;
+    top: -110px;
   }
 }
 @media screen and (max-width: 480px) {
@@ -225,6 +225,6 @@ textarea {
 
   .sub-title__contacto {
     font-size: 70px;
-    top: -440px;
+    top: -85px;
   }
 }

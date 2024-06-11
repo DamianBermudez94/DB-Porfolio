@@ -11,10 +11,7 @@
     rgba(99, 1, 1, 0.555) 100%,
     rgba(0, 0, 0, 0) 100%
   );
-  clip-path: polygon(0 0, 100% 3%, 100% 100%, 0% 100%);
-}
-.content-title{
-  margin: 50px auto;
+  clip-path: polygon(0 2%, 100% 0, 100% 100%, 0% 100%);
 }
 .title-servicios {
   width: 100%;
@@ -33,7 +30,7 @@
   position: relative;
   opacity: 0.1;
   font-size: 8em;
-  top: -150px;
+  top: -170px;
   color: rgb(255, 255, 255);
   margin: 0 auto;
 }
@@ -185,7 +182,7 @@
       rgba(99, 1, 1, 0.555) 100%,
       rgba(0, 0, 0, 0) 100%
     );
-    clip-path: polygon(0 1%, 100% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(0 5%, 100% 0, 100% 100%, 0% 100%);
   }
   .card-details {
     grid-template-columns: repeat(1, 1fr);
@@ -198,14 +195,13 @@
     grid-column: span 1;
   }
   .title-servicios {
-    font-size: 3.5em;
-    max-width: 300px;
+  margin: 50px;
+    border-bottom: 3px solid rgb(255, 80, 80);
   }
-
   .sub-title__servicios {
-    font-size: 5.5em;
-    top: -105px;
-    
+    font-size: 90px;
+    top: -100px;
+    color: rgb(253, 214, 214);
   }
   .text-title {
     width: 60%;
@@ -217,6 +213,10 @@
 @media (max-width: 480px) {
   .card {
     max-width: 325px;
+  }
+  .title-servicios {
+    font-size: 35px;
+    max-width: 300px;
   }
   .text-title {
     width: 80%;
