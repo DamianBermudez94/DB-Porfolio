@@ -1,0 +1,121 @@
+/**Estilos section Sobre mi**/
+
+.section-me {
+    height: 1200px;
+    padding: 60px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(
+      circle,
+      rgba(11, 10, 10, 9) 40%,
+      rgba(99, 1, 1, 0.555) 100%,
+      rgba(0, 0, 0, 0) 100%
+    );
+    clip-path: polygon(0 1%, 100% 0, 100% 100%, 0% 100%);
+  }
+  .content-title {
+    height: 200px;
+    text-align: center;
+  }
+  
+  .title-sobre__me {
+    margin: 0;
+    padding: 5px;
+    font-size: 80px;
+    color: rgb(255, 255, 255);
+    border-bottom: 3px solid rgb(255, 80, 80);
+  }
+  .section-me .sub-title {
+    position: relative;
+    opacity: 0.1;
+    font-size: 150px;
+    top: -170px;
+    right: 0;
+    color: rgb(253, 214, 214);
+    overflow: hidden;
+  }
+  .container-me {
+    width: 100%;
+    max-width: 1500px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+  
+  .container-me article img {
+    width: 28rem;
+    height: 28rem;
+    float: left;
+    object-fit: cover;
+    object-position: -10px 0px;
+    shape-outside: circle(50%);
+    margin:0 50px 0px 50px;
+    padding: 10px;
+  }
+  
+  .section-me article p {
+    font-size: 25px;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+    padding: 10px;
+    
+  }
+  .section-me article p strong {
+    padding: 5px;
+    font-size: 25px;
+    letter-spacing: 1px;
+    color: #fa9484;
+  }
+  
+  @media (max-width: 1280px) {
+    .section-me div {
+      display: block;
+    }
+  }
+  
+  @media (max-width: 780px) {
+    .section-me {
+      height: 1600px;
+      padding: 20px;
+    }
+  
+    .container-me article {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .section-me article img {
+      width: 300px;
+      height: 300px;
+      object-position: 0;
+    }
+    .section-me .title-sobre__me {
+      font-size: 45px;
+    }
+    .section-me .sub-title {
+      font-size: 100px;
+      top: -110px;
+    }
+  }
+  @media (max-width: 480px) {
+    .section-me .title-sobre__me {
+      margin-top: 50px;
+      font-size: 45px;
+    }
+    .section-me .sub-title {
+      font-size: 80px;
+      top: -100px;
+    }
+    .section-me article p {
+      font-size: 18px;
+    }
+  }
+  
