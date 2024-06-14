@@ -12,7 +12,8 @@
 
 .content-title__principal h1,
 .content-title__principal span {
-  font-size: 5.5em;
+  width: 100%;
+  font-size: 5em;
   background: -webkit-linear-gradient(#ff0000, #fc000059);
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -130,19 +131,10 @@
   }
 }
 @media (max-width: 480px) {
-  .container-redes_inicio .link-redes_sociales i{
-    font-size: 2.5em;
+  .container-redes_inicio i{
+    padding: 0;
   }
   .content-title__principal h1 {
     font-size: 2.5em;
-  }
-  .btn-cv{
-    font-size: 1.3em;
-    padding: 15px 15px;
-  }
-  .container-redes_inicio .link-redes_sociales{
-    width: 65px;
-    height: 65px;
-    
   }
 }

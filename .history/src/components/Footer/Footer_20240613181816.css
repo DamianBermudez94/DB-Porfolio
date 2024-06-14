@@ -27,8 +27,7 @@
 }
 .content-copy__footer a img {
   width: 150px;
-  height: 150px;
-  object-fit: cover;
+  height: 100px;
   padding: 20px;
 }
 

@@ -23,15 +23,15 @@
 .title-sobre__me {
   margin: 0;
   padding: 5px;
-  font-size: 5em;
+  font-size: 6em;
   color: rgb(255, 255, 255);
   border-bottom: 3px solid rgb(255, 80, 80);
 }
 .section-me .sub-title {
   position: relative;
   opacity: 0.1;
-  font-size: 7.5em;
-  top: -150px;
+  font-size: 150px;
+  top: -170px;
   right: 0;
   color: rgb(253, 214, 214);
   overflow: hidden;

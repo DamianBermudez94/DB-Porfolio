@@ -9,26 +9,25 @@
   justify-content: left;
   padding: 40px 60px;
 }
-
-.content-title__principal h1,
-.content-title__principal span {
-  font-size: 5.5em;
+.content-title__principal{
+  width: 100%;
+}
+.content-title__principal h1, .content-title__principal span {
+  width: 100%;
+  font-size: 4.5em;
   background: -webkit-linear-gradient(#ff0000, #fc000059);
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin: 10px auto;
-}
-.content-title__principal span {
-  font-size: 2.5em;
+  margin: 10px;
 }
 
 .container-redes_inicio {
-  width:100%;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: left;
-  padding: 10px 0;
-  margin: 10px 0;
+  padding: 20px 0;
+  margin: 10px;
 }
 .container-redes_inicio .link-redes_sociales {
   margin: 10px;
@@ -42,7 +41,7 @@
   text-decoration: none;
   display: flex;
   justify-content: center;
-  font-size: 1.5em;
+  font-size: 20px;
   cursor: pointer;
   letter-spacing: 1px;
   color: rgb(255, 0, 0);
@@ -50,7 +49,7 @@
   outline: 2px solid rgb(255, 80, 80);
   border: none;
   border-radius: 8px;
-  padding: 17px 17px;
+  padding: 10px 20px;
   margin-left: 10px;
   position: relative;
   top: 0px;
@@ -100,6 +99,7 @@
   grid-column: span 2;
 }
 
+
 @media (max-width: 960px) {
   .home-welcome {
     padding: 20px;
@@ -130,19 +130,10 @@
   }
 }
 @media (max-width: 480px) {
-  .container-redes_inicio .link-redes_sociales i{
-    font-size: 2.5em;
+  .container-redes_inicio {
+    padding: 5px;
   }
   .content-title__principal h1 {
     font-size: 2.5em;
-  }
-  .btn-cv{
-    font-size: 1.3em;
-    padding: 15px 15px;
-  }
-  .container-redes_inicio .link-redes_sociales{
-    width: 65px;
-    height: 65px;
-    
   }
 }

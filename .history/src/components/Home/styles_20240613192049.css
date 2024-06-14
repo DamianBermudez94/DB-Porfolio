@@ -12,6 +12,7 @@
 
 .content-title__principal h1,
 .content-title__principal span {
+  
   font-size: 5.5em;
   background: -webkit-linear-gradient(#ff0000, #fc000059);
   background-clip: text;
