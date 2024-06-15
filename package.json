@@ -10,6 +10,7 @@
     "start": "vite preview"
   },
   "dependencies": {
+    "@formspree/react": "^2.5.1",
     "@iconify/react": "^4.1.1",
     "@skits/react-text-scramble": "^1.1.0",
     "animateJs": "^0.1.0",

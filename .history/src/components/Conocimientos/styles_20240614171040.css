@@ -214,10 +214,14 @@
     font-size: 5em;
   }
   .item-front {
+    width: 100%;
+    position: absolute;
     top: -120px;
     transform: rotateY(calc(var(--i) * 60deg)) translateZ(150px);
   }
   .item-back {
+    width: 100%;
+    position: absolute;
     top: -120px;
     transform: rotateY(calc(var(--i) * 80deg)) translateZ(150px);
   }
@@ -267,11 +271,11 @@
     grid-template-columns: repeat(1, 1fr);
   }
   .title-conocimientos {
-    font-size: 2em;
-    
+    font-size: 30px;
+    max-width: 250px;
   }
   .sub-title__conocimientos {
-    font-size: 3em;
-    top: -112px;
+    font-size: 40px;
+    top: -80px;
   }
 }

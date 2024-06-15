@@ -1,12 +1,5 @@
-import React from 'react';
-import { useForm, ValidationError } from '@formspree/react';
 import "./styles.css";
-
 export const Contact = () => {
-  const [state, handleSubmit] = useForm("xrgnnogr");
-  if (state.succeeded) {
-      return <p>Thanks for joining!</p>;
-  }
   return (
     <section className="container-form" data-animation="diagonal" id="contacto">
       <div className="content">
@@ -46,10 +39,8 @@ export const Contact = () => {
         </div>
       </div>
 
-      <form
-        id="formulario"
-        onSubmit={handleSubmit}
-      >
+      <form id="formulario" action="https://formspree.io/f/xrgnnogr"
+  method="POST">
         <input
           type="text"
           id="nombre"
@@ -77,7 +68,7 @@ export const Contact = () => {
           placeholder="Deje su mensaje......"
           required
         ></textarea>
-        <button type="submit" className="btn-enviar" disabled={state.submitting}>
+        <button type="submit" className="btn-enviar">
           <span>Enviar</span>
           <span></span>
         </button>

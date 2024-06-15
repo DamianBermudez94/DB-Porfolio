@@ -267,11 +267,11 @@
     grid-template-columns: repeat(1, 1fr);
   }
   .title-conocimientos {
-    font-size: 2em;
+    font-size: 2.5em;
     
   }
   .sub-title__conocimientos {
-    font-size: 3em;
+    font-size: 3.5em;
     top: -112px;
   }
 }

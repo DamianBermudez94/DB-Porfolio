@@ -268,7 +268,7 @@
   }
   .title-conocimientos {
     font-size: 2em;
-    
+    max-width: 250px;
   }
   .sub-title__conocimientos {
     font-size: 3em;
