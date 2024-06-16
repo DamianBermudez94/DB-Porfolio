@@ -3,13 +3,7 @@ import "./styles.css";
 
 export const Contact = () => {
   const [state, handleSubmit] = useForm("xrgnnogr");
-  
-  window.onbeforeunload = () => {
-    for(const form of document.getElementsByTagName('form')) {
-      alert("Se ha borradp el formulario")
-      form.reset();
-    }
-  }
+
   return (
     <section className="container-form" data-animation="diagonal" id="contacto">
       <div className="content">
@@ -87,7 +81,7 @@ export const Contact = () => {
           <span>Enviar</span>
           <span></span>
         </button>
-        {state.succeeded ? <p className="mensaje-ok">Mensaje enviado</p> : ""}
+        {state.succeeded ? "Mensaje enviado!" == "" : ""}
         <div className="mensaje-form">
           <strong>
             * No dudes en consultarme, te estare respondiendo a la brevedad *

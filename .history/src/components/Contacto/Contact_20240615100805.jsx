@@ -1,14 +1,15 @@
-import { useForm, ValidationError } from "@formspree/react";
+
+import { useForm, ValidationError } from '@formspree/react';
 import "./styles.css";
 
 export const Contact = () => {
   const [state, handleSubmit] = useForm("xrgnnogr");
-  
-  window.onbeforeunload = () => {
-    for(const form of document.getElementsByTagName('form')) {
-      alert("Se ha borradp el formulario")
-      form.reset();
-    }
+
+  if (state.succeeded) {
+      <p>Mensaje enviado!</p>;
+     
+  }else{
+    return <p>Hubo un error al enviar el mensaje</p>
   }
   return (
     <section className="container-form" data-animation="diagonal" id="contacto">
@@ -49,16 +50,24 @@ export const Contact = () => {
         </div>
       </div>
 
-      <form id="formulario" onSubmit={handleSubmit}>
-        <ValidationError />
+      <form
+        id="formulario"
+        onSubmit={handleSubmit}
+      >
+        <ValidationError/>
         <input
           type="text"
           id="nombre"
           name="nombre"
+          value={formData.nombre}
           placeholder="Escriba su nombre..."
           required
         />
-        <ValidationError prefix="Nombre" field="nombre" errors={state.errors} />
+        <ValidationError
+        prefix='Nombre'
+        field='nombre'
+        errors={state.errors}
+        />
         <input
           type="tel"
           id="telefono"
@@ -69,7 +78,7 @@ export const Contact = () => {
         <input
           type="email"
           id="email"
-          name="email"
+          name="correo"
           placeholder="Escriba su email..."
           required
         />
@@ -79,15 +88,10 @@ export const Contact = () => {
           placeholder="Deje su mensaje......"
           required
         ></textarea>
-        <button
-          type="submit"
-          className="btn-enviar"
-          disabled={state.submitting}
-        >
+        <button type="submit" className="btn-enviar" disabled={state.submitting}>
           <span>Enviar</span>
           <span></span>
         </button>
-        {state.succeeded ? <p className="mensaje-ok">Mensaje enviado</p> : ""}
         <div className="mensaje-form">
           <strong>
             * No dudes en consultarme, te estare respondiendo a la brevedad *

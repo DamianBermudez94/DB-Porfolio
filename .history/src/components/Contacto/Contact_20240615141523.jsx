@@ -3,13 +3,7 @@ import "./styles.css";
 
 export const Contact = () => {
   const [state, handleSubmit] = useForm("xrgnnogr");
-  
-  window.onbeforeunload = () => {
-    for(const form of document.getElementsByTagName('form')) {
-      alert("Se ha borradp el formulario")
-      form.reset();
-    }
-  }
+
   return (
     <section className="container-form" data-animation="diagonal" id="contacto">
       <div className="content">
@@ -82,7 +76,16 @@ export const Contact = () => {
         <button
           type="submit"
           className="btn-enviar"
-          disabled={state.submitting}
+          disabled={
+            (state.submitting = () => {
+              window.onbeforeunload = () => {
+                for (const form of document.getElementsByTagName("form")) {
+                  alert("Se ha borradp el formulario");
+                  form.reset();
+                }
+              };
+            })
+          }
         >
           <span>Enviar</span>
           <span></span>

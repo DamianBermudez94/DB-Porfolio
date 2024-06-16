@@ -1,15 +1,47 @@
-import { useForm, ValidationError } from "@formspree/react";
+import{ useState } from 'react';
 import "./styles.css";
 
 export const Contact = () => {
-  const [state, handleSubmit] = useForm("xrgnnogr");
-  
-  window.onbeforeunload = () => {
-    for(const form of document.getElementsByTagName('form')) {
-      alert("Se ha borradp el formulario")
-      form.reset();
+ 
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    message: '',
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value,
+    }));
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    // Aquí puedes enviar los datos a Formspree
+    const response = await fetch('https://formspree.io/f/{xrgnnogr}', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(formData),
+    });
+
+    if (response.ok) {
+      alert('Mensaje enviado con éxito');
+      // Limpiar el formulario
+      setFormData({
+        name: '',
+        email: '',
+        message: '',
+      });
+    } else {
+      alert('Hubo un problema al enviar el mensaje');
     }
-  }
+  };
+
   return (
     <section className="container-form" data-animation="diagonal" id="contacto">
       <div className="content">
@@ -87,7 +119,7 @@ export const Contact = () => {
           <span>Enviar</span>
           <span></span>
         </button>
-        {state.succeeded ? <p className="mensaje-ok">Mensaje enviado</p> : ""}
+        {state.succeeded ? (<p className="mensaje-ok">Mensaje enviado</p>) : ""}
         <div className="mensaje-form">
           <strong>
             * No dudes en consultarme, te estare respondiendo a la brevedad *

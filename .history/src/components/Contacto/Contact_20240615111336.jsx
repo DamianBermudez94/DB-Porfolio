@@ -1,15 +1,47 @@
-import { useForm, ValidationError } from "@formspree/react";
+import{ useState } from 'react';
 import "./styles.css";
 
 export const Contact = () => {
-  const [state, handleSubmit] = useForm("xrgnnogr");
-  
-  window.onbeforeunload = () => {
-    for(const form of document.getElementsByTagName('form')) {
-      alert("Se ha borradp el formulario")
-      form.reset();
+ 
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    message: '',
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value,
+    }));
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    // Aquí puedes enviar los datos a Formspree
+    const response = await fetch('https://formspree.io/f/{xrgnnogr}', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(formData),
+    });
+
+    if (response.ok) {
+      alert('Mensaje enviado con éxito');
+      // Limpiar el formulario
+      setFormData({
+        name: '',
+        email: '',
+        message: '',
+      });
+    } else {
+      alert('Hubo un problema al enviar el mensaje');
     }
-  }
+  };
+
   return (
     <section className="container-form" data-animation="diagonal" id="contacto">
       <div className="content">
@@ -50,21 +82,26 @@ export const Contact = () => {
       </div>
 
       <form id="formulario" onSubmit={handleSubmit}>
-        <ValidationError />
+      
         <input
           type="text"
           id="nombre"
           name="nombre"
           placeholder="Escriba su nombre..."
           required
+          value={formData.nombre}
+          onChange={handleChange}
         />
-        <ValidationError prefix="Nombre" field="nombre" errors={state.errors} />
+      
+
         <input
           type="tel"
           id="telefono"
           name="telefono"
           placeholder="Escriba su numero de telefono..."
           required
+          value={formData.telefono}
+          onChange={handleChange}
         />
         <input
           type="email"
@@ -72,22 +109,26 @@ export const Contact = () => {
           name="email"
           placeholder="Escriba su email..."
           required
+          value={formData.email}
+          onChange={handleChange}
         />
         <textarea
           name="asunto"
           id="mensaje"
           placeholder="Deje su mensaje......"
           required
+          value={formData.asunto}
+          onChange={handleChange}
         ></textarea>
         <button
           type="submit"
           className="btn-enviar"
-          disabled={state.submitting}
+          
         >
           <span>Enviar</span>
           <span></span>
         </button>
-        {state.succeeded ? <p className="mensaje-ok">Mensaje enviado</p> : ""}
+       
         <div className="mensaje-form">
           <strong>
             * No dudes en consultarme, te estare respondiendo a la brevedad *

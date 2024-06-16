@@ -3,13 +3,8 @@ import "./styles.css";
 
 export const Contact = () => {
   const [state, handleSubmit] = useForm("xrgnnogr");
-  
-  window.onbeforeunload = () => {
-    for(const form of document.getElementsByTagName('form')) {
-      alert("Se ha borradp el formulario")
-      form.reset();
-    }
-  }
+
+
   return (
     <section className="container-form" data-animation="diagonal" id="contacto">
       <div className="content">
@@ -69,7 +64,7 @@ export const Contact = () => {
         <input
           type="email"
           id="email"
-          name="email"
+          name="correo"
           placeholder="Escriba su email..."
           required
         />
@@ -86,8 +81,9 @@ export const Contact = () => {
         >
           <span>Enviar</span>
           <span></span>
-        </button>
-        {state.succeeded ? <p className="mensaje-ok">Mensaje enviado</p> : ""}
+        </button>{
+          state.succeeded ? "Mensaje enviado!" : "Error al enviar el mensaje, verificar la información enviada"
+        }
         <div className="mensaje-form">
           <strong>
             * No dudes en consultarme, te estare respondiendo a la brevedad *

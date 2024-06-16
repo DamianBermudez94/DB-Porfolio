@@ -6,7 +6,6 @@ export const Contact = () => {
   
   window.onbeforeunload = () => {
     for(const form of document.getElementsByTagName('form')) {
-      alert("Se ha borradp el formulario")
       form.reset();
     }
   }
@@ -87,7 +86,7 @@ export const Contact = () => {
           <span>Enviar</span>
           <span></span>
         </button>
-        {state.succeeded ? <p className="mensaje-ok">Mensaje enviado</p> : ""}
+        {state.succeeded ? <p className="mensaje-ok">Mensaje enviado</p>: ""}
         <div className="mensaje-form">
           <strong>
             * No dudes en consultarme, te estare respondiendo a la brevedad *
