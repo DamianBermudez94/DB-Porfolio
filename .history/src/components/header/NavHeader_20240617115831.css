@@ -114,9 +114,7 @@
   .menu li {
     width: 100%;
     margin: 10px auto;
-    display: flex;
     justify-content: center;
-    align-items: center;
     transform: translateY(-50px);
     opacity: 0;
     transition: transform 0.5s ease, opacity 0.5s ease;
@@ -127,8 +125,7 @@
     padding: 10px;
   }
   .menu ul li.activo a {
-    color: red;
-    border-bottom: none;
+    border-bottom: 2px solid red;
   }
 }
 @media screen and (max-width: 480px) {

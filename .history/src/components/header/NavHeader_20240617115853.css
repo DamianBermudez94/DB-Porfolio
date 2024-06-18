@@ -127,8 +127,7 @@
     padding: 10px;
   }
   .menu ul li.activo a {
-    color: red;
-    border-bottom: none;
+    border-bottom: 2px solid red;
   }
 }
 @media screen and (max-width: 480px) {

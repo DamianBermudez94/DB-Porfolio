@@ -79,9 +79,9 @@
   .header {
     max-width: 900px;
   }
-  .btn-menu {
-    display: block;
-  }
+.btn-menu{
+  display: block;
+}
   .menu {
     margin: 0;
     transform: translateY(-100%);
@@ -114,9 +114,8 @@
   .menu li {
     width: 100%;
     margin: 10px auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  
+    margin: 10px 0;
     transform: translateY(-50px);
     opacity: 0;
     transition: transform 0.5s ease, opacity 0.5s ease;
@@ -127,9 +126,9 @@
     padding: 10px;
   }
   .menu ul li.activo a {
-    color: red;
-    border-bottom: none;
+    border-bottom: 2px solid red;
   }
+
 }
 @media screen and (max-width: 480px) {
   .header {

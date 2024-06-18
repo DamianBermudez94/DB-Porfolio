@@ -29,7 +29,7 @@ export const NavHeader = () => {
 
     sections.forEach((section) => {
       const rect = section.getBoundingClientRect();
-      if (rect.top <= 50 && rect.bottom >= 50 && !found) {
+      if (rect.top <= 0 && rect.bottom >= 120 && !found) {
         setActive(section.id);
         found = true;
       }

@@ -20,8 +20,11 @@ export const NavHeader = () => {
     //cuando esta true lo pasa a false y vice versa
     setClicked(!clicked);
   };
-
-
+  // Función para manejar los rutas de
+  const handleSetActive = (to) => {
+    console.log("hola", to);
+    setActive(to);
+  };
 
   const handleScroll = () => {
     const sections = document.querySelectorAll("section");
@@ -29,7 +32,7 @@ export const NavHeader = () => {
 
     sections.forEach((section) => {
       const rect = section.getBoundingClientRect();
-      if (rect.top <= 50 && rect.bottom >= 50 && !found) {
+      if (rect.top <= 0 && rect.bottom >= 0 && !found) {
         setActive(section.id);
         found = true;
       }

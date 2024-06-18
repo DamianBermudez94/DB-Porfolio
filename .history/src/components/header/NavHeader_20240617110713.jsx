@@ -20,24 +20,15 @@ export const NavHeader = () => {
     //cuando esta true lo pasa a false y vice versa
     setClicked(!clicked);
   };
-
-
+  // Función para manejar los rutas de
+  const handleSetActive = (to) => {
+    console.log("hola", to);
+    setActive(to);
+  };
 
   const handleScroll = () => {
-    const sections = document.querySelectorAll("section");
-    let found = false;
 
-    sections.forEach((section) => {
-      const rect = section.getBoundingClientRect();
-      if (rect.top <= 50 && rect.bottom >= 50 && !found) {
-        setActive(section.id);
-        found = true;
-      }
-    });
 
-    if (!found) {
-      setActive("");
-    }
 
     // condicional para manejar altura de la pagina
     // para inidcarle al header cuando ocultarse/mostrarse
@@ -79,7 +70,7 @@ export const NavHeader = () => {
               <NavHashLink
                 smooth
                 to="#inicio"
-                onClick={() => setActive("inicio")}
+                onClick={() => handleSetActive("inicio")}
               >
                 Inicio
               </NavHashLink>
@@ -88,7 +79,7 @@ export const NavHeader = () => {
               <NavHashLink
                 smooth
                 to="#sobre-mi"
-                onClick={() => setActive("sobre-mi")}
+                onClick={() => handleSetActive("sobre-mi")}
               >
                 Sobre mi
               </NavHashLink>
@@ -97,7 +88,7 @@ export const NavHeader = () => {
               <NavHashLink
                 smooth
                 to="#proyectos"
-                onClick={() => setActive("proyectos")}
+                onClick={() => handleSetActive("proyectos")}
               >
                 Porfolio
               </NavHashLink>
@@ -106,7 +97,7 @@ export const NavHeader = () => {
               <NavHashLink
                 smooth
                 to="#servicios"
-                onClick={() => setActive("servicios")}
+                onClick={() => handleSetActive("servicios")}
               >
                 Servicios
               </NavHashLink>
@@ -115,7 +106,7 @@ export const NavHeader = () => {
               <NavHashLink
                 smooth
                 to="#conocimientos"
-                onClick={() => setActive("conocimientos")}
+                onClick={() => handleSetActive("conocimientos")}
               >
                 Conocimientos
               </NavHashLink>
@@ -124,7 +115,7 @@ export const NavHeader = () => {
               <NavHashLink
                 smooth
                 to="#contacto"
-                onClick={() => setActive("contacto")}
+                onClick={() => handleSetActive("contacto")}
               >
                 Contacto
               </NavHashLink>
